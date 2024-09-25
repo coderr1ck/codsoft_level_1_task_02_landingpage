@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+html ,body{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0vmax 4vmax;
+    border-bottom: 1px solid #385A64;
+}
+nav h2{
+    font-size: 2vw;
+    font-weight: 700;
+}
+nav h4{
+    font-size: 1.2vw;
+    margin: 1vw 2vw;
+    
+}
+nav i {
+    font-size: 1.2vw;
+    font-weight: 800;
+    display: none;
+}
+#signin{
+    font-size: 1vw;
+    padding: 0.7vw 1.6vw;
+    font-weight: 400;
+    background: #385A64;
+}
+/* child css*/
+
+.child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 4vw; */
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    height: calc(100% - 75px);
+}
+.lpart{
+    padding: 5vmax 4vmax;
+    height: 100%;
+    width: 50%;
+}
+.rpart{
+    height: 100%;
+    width: 50%;
+}
+
+.rpart>img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+.lpart>h1{
+    font-size: 4vmax;
+    line-height: 4.4vmax;
+    width: 110%;
+}
+.lpart>h1>span{
+    color: #FF735C;
+}
+
+p{
+    font-size: 1.2vmax;
+    font-weight: 400;
+    width: 88%;
+    color: #020202;
+    margin-top: 3vmax;
+    margin-bottom: 4vmax;
+
+}
+button{
+    font-size: 1.3vmax;
+    padding: 1vmax 2vmax;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background: #FF735C;
+    font-weight: 500;
+    
+}
+
+nav h4:hover{
+    padding: .5vw 1.2vw;
+    margin: .5vw 0.8vw;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background: #FF735C;
+    cursor: pointer;
+    transition: 0.45s;
+}
+#signin:hover{
+    background: #385a64d8;
+}
+button:hover{
+    background: #ff725ce7;
+    transition: .3s;
+    cursor: pointer;
+}
+
+@media (max-width:800px){
+    nav{
+        background: lightseagreen;
+        color: #ffff;
+    }
+    nav h2{
+        font-size: 6vw ;
+    }
+    nav h4{
+        font-size: 4vw;
+        display: none;
+    }
+    nav i{
+        display: block;
+        font-size: 4.5vw;
+    }
+    #signin{
+       display: none;
+    }
+    .lpart{
+        
+        height: 50%;
+        width: 100%;
+    }
+    .rpart{
+        
+        height: 50%;
+        width: 100%;
+        
+    }
+    .rpart>img{
+        object-fit: cover;
+    }
+}
